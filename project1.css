@@ -1,0 +1,122 @@
+/* Base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e 0%, #c4fadc 100%);
+    color: #333;
+}
+
+/* Quiz container styles */
+.quiz-section {
+    background: linear-gradient(135deg, #ffffff, #f6f8fc);
+    padding: 2rem;
+    width: 400px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.quiz-section:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+#quiz {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Question title */
+h2.question {
+    font-size: 1.8rem;
+    color: #4a4e69;
+    margin-bottom: 1.2rem;
+}
+
+/* Separator line */
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 1rem 0;
+}
+
+/* Answer list styling */
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+/* Radio button and label styles */
+input[type="radio"] {
+    appearance: none;
+    margin-right: 12px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #9a8c98;
+    background-color: #f6f8fc;
+    transition: background-color 0.3s, border-color 0.3s;
+    cursor: pointer;
+}
+
+input[type="radio"]:checked {
+    background-color: #4a4e69;
+    border-color: #4a4e69;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #4a4e69;
+    cursor: pointer;
+}
+
+/* Button styling */
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+button#submit {
+    background: linear-gradient(135deg, #4a4e69, #22223b);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+button#submit:hover {
+    background: linear-gradient(135deg, #22223b, #4a4e69);
+    transform: translateY(-3px);
+}
+
+#timer {
+    font-size: 1.2em;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #007BFF;
+    text-align: center; /* Ensure text alignment */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
